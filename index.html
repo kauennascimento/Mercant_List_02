@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsivo.css" />
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="icon" href="assets/logo.png" type="image/png" />
     <title>www.MercantiList.com</title>
   </head>
   <body>
@@ -60,7 +60,7 @@
           no Tecido 100% Algodão de Malha Penteada Fio 30.1. Isso quer dizer que
           a ... <a href="#">Mais</a>
         </h5>
-        <h3>$199.00</h3>
+        <h3 id="preco">$199.00</h3>
         <a href="#" class="btn">Compre agora</a>
       </div>
       <!--home-text-->
@@ -73,7 +73,7 @@
           <li>
             <img
               src="assets/shopping (1).png"
-              onclick="slider('assets/shopping (1).png')"
+              onclick="slider('assets/shopping (1).png', '$199.00')"
             />
           </li>
         </ul>
@@ -85,7 +85,7 @@
           <li>
             <img
               src="assets/shopping (2).png"
-              onclick="slider('assets/shopping (2).png')"
+              onclick="slider('assets/shopping (2).png', '$149.00')"
             />
           </li>
         </ul>
@@ -97,7 +97,7 @@
           <li>
             <img
               src="assets/shopping (3).png"
-              onclick="slider('assets/shopping (3).png')"
+              onclick="slider('assets/shopping (3).png', '$179.00')"
             />
           </li>
         </ul>
@@ -107,8 +107,9 @@
     <!--main-->
 
     <script>
-      function slider(anything) {
+      function slider(anything, preco) {
         document.querySelector(".one").src = anything;
+        document.querySelector("#preco").textContent = preco;
       }
 
       let menu = document.querySelector("#menu");
