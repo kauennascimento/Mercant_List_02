@@ -1,0 +1,218 @@
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+/* Tablets e telas menores */
+@media (max-width: 900px) {
+  header {
+    padding: 25px 5%;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .logo i {
+    font-size: 35px;
+  }
+
+  .navegação a {
+    margin: 0 15px;
+  }
+
+  .home {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 5%;
+  }
+
+  .home-img img {
+    width: 24rem;
+    height: 26rem;
+    margin-left: 10%;
+  }
+
+  .home-text h1 {
+    font-size: 3rem;
+  }
+
+  .home-text h5 {
+    font-size: 13px;
+  }
+
+  .main {
+    left: 2%;
+  }
+}
+
+/* ========================================
+   CELULARES
+   ======================================== */
+
+@media (max-width: 700px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .logo i {
+    font-size: 28px;
+  }
+
+  /* Menu */
+  #menu {
+    display: block;
+  }
+
+  .navegação {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 220px;
+    height: auto;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+
+  .navegação.open {
+    right: 0;
+  }
+
+  .navegação a {
+    display: block;
+    margin: 15px 0;
+  }
+
+  /* Área principal */
+  .home {
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 120px 8% 50px;
+    text-align: center;
+  }
+
+  .home-img {
+    order: 1;
+  }
+
+  .home-img img {
+    width: 20rem;
+    height: 22rem;
+    margin-left: 0;
+  }
+
+  .home-text {
+    order: 2;
+  }
+
+  .home-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-text h5 {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+
+  .home-text h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    padding: 13px 50px;
+  }
+
+  /* Miniaturas */
+  .main {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 40px;
+    gap: 1rem;
+  }
+
+  .row,
+  .row2,
+  .row3 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main li img {
+    width: 40px;
+    height: 45px;
+  }
+}
+
+/* ========================================
+   CELULARES PEQUENOS
+   ======================================== */
+
+@media (max-width: 400px) {
+  header {
+    padding: 15px 4%;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .logo i {
+    font-size: 24px;
+    margin-right: 3px;
+  }
+
+  .header-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .home {
+    padding: 100px 5% 40px;
+  }
+
+  .home-img img {
+    width: 17rem;
+    height: 19rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-text h5 {
+    font-size: 12px;
+  }
+
+  .home-text h3 {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 12px 40px;
+  }
+
+  .row,
+  .row2,
+  .row3 {
+    width: 55px;
+    height: 55px;
+  }
+
+  .main li img {
+    width: 35px;
+    height: 40px;
+  }
+}
